@@ -1,1 +1,1 @@
-# Trip
+# Jeju travel plan
