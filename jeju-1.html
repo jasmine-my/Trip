@@ -4,6 +4,7 @@
 	<title>여행지도</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="gamgule.png">
 </head>
 
 <body>
@@ -13,22 +14,41 @@
 				window.history.back();
 			}
 		</script>
-
-	<h1><a href="index.html">제주도 3일 여행 계획</a></h1>
+	<header>	
+		<h1><a href="index.html">제주도 3일 여행 계획</a></h1>
+	</header>
 
 	<div id="grid">
+	<aside>
 		<ol id="menu">
 			<li><a href="jeju-1.html" id="active">여행지도</a></li>
 			<li><a href=jeju-2.html>첫째날</a></li>
 			<li><a href=jeju-3.html>둘째날</a></li>
 			<li><a href=jeju-4.html>셋째날</a></li>
 		</ol>
+	</aside>
 
 
-		<div>
+		<main>
 			<h2 style="color:green">여행지도</h2>
-			<img src="jejumap.jpg" width="99%">
-		</div>
+			<img src="jejumap.jpg" usemap="#jejumap" alt="map of Jeju-island">
+			<map name="jejumap" id="jejumap">
+				<area shape="rect" coords="440,334,480,352" href="jeju-2.html">
+				<area shape="rect" coords="270,96,311,106" href="jeju-2.html"#도두봉>
+				<area shape="rect" coords="289,110,357,123" href="jeju-2.html"#선비치리조트>
+				<area shape="rect" coords="200,104,268,116" href="jeju-2.html">
+				<area shape="rect" coords="490,333,530,350" href="jeju-3.html">
+				<area shape="rect" coords="388,138,465,150" href="jeju-3.html">
+				<area shape="rect" coords="497,56,574,68" href="jeju-3.html">
+				<area shape="rect" coords="458,40,505,52" href="jeju-3.html">
+				<area shape="rect" coords="414,57,468,68" href="jeju-3.html">
+				<area shape="rect" coords="416,69,460,79" href="jeju-3.html">
+				<area shape="rect" coords="415,82,463,91" href="jeju-3.html">
+				<area shape="rect" coords="540,334,580,350" href="jeju-4.html">
+				<area shape="rect" coords="383,151,460,161" href="jeju-4.html">
+				<area shape="rect" coords="320,92,361,103" href="jeju-4.html">
+			</map>			
+		</main>
 	</div>
 
 </body>
